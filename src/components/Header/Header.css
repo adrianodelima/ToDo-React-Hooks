@@ -1,10 +1,39 @@
 .header {
-    display: flex;
-    justify-content: center;
-    background: var(--gray-700);
-    padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  background: var(--gray-700);
+  padding: 5rem 0;
+  gap: 10rem;
 }
 
 body.light .header {
-    background: var(--gray-100);
+  background: var(--gray-100);
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.4;
+
+  border: 0;
+  border-radius: 8px;
+  padding: 1rem;
+
+  color: var(--gray-100);
+  background: var(--blue-dark);
+  transition: background-color 0.1s;
+}
+
+.header button:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.header button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
 }
