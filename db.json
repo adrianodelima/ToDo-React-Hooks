@@ -1,0 +1,14 @@
+{
+  "tarefas": [
+      {
+          "id": 1,
+          "content": "Configurar projeto inicial",
+          "concluded": true
+      },
+      {
+          "id": 2,
+          "content": "Configurar API através do JSON Server",
+          "concluded": true
+      }
+  ]
+}
